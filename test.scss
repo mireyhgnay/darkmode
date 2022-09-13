@@ -1,0 +1,130 @@
+// root 기본 색상
+:root {
+    --font-color: #34495e;
+    --link-white-color:#3498db;
+    --bg-color: rgb(243,243,243);
+    --bg-img: url(http://placeimg.com/320/240/tech);
+    --body-margin:0;
+}
+//dark theme 생삭
+[data-theme="dark"] {
+    --font-color: #e67e22;
+    --link-white-color:#c1bfbd;
+    --bg-color: #34495e;
+    --bg-img: url(http://placeimg.com/320/240/animals/sepia);
+}
+
+html, body {
+    margin: var(--body-margin);
+    padding: var(--body-margin);
+}
+body {
+    width: 100%;
+    color:#000;
+    color:var(--font-color);
+    background:rgb(243,243,243);
+    background:var(--bg-color);
+    overflow-x: hidden;
+}
+header{
+    display: inline-block;
+    width: 640px;
+    height: 480px;
+    background: var(--bg-img) left top no-repeat;
+    background-size: contain;
+}
+h1 {
+    mix-blend-mode:screen;
+    width: 100%;
+    padding:0;
+    background-color: #fff;
+    font-size: 100px;
+}
+h2 {
+    font-size: 40px;
+}
+button {
+    margin-bottom: 20px;
+    color : var(--link-white-color);
+    border: 1px solid var(--link-white-color)
+}
+
+
+
+
+
+// // light theme
+// :root {
+//     --ui-color-background-100: #colors[gray-000]; // white
+//     --ui-color-background-090: #colors[gray-005];
+//     --ui-color-background-080: #colors[gray-010];
+//     --ui-color-background-070: #colors[gray-015];
+//     --ui-color-background-060: #colors[gray-020];
+//     --ui-color-background-050: #colors[gray-030];
+//     --ui-color-background-040: #colors[gray-040];
+//     --ui-color-background-030: #colors[gray-050];
+//     --ui-color-background-020: #colors[gray-060];
+//     --ui-color-background-010: #colors[gray-070];
+//     --ui-color-background-000: #colors[gray-080];
+  
+//     --ui-color-foreground-100: #colors[gray-100]; // black
+//     --ui-color-foreground-090: #colors[gray-095];
+//     --ui-color-foreground-080: #colors[gray-090];
+//     --ui-color-foreground-070: #colors[gray-085];
+//     --ui-color-foreground-060: #colors[gray-080];
+//     --ui-color-foreground-050: #colors[gray-070];
+//     --ui-color-foreground-040: #colors[gray-060];
+//     --ui-color-foreground-030: #colors[gray-050];
+//     --ui-color-foreground-020: #colors[gray-040];
+//     --ui-color-foreground-010: #colors[gray-030];
+//     --ui-color-foreground-000: #colors[gray-020];
+//   }
+  
+//   // dark theme
+//   @media (prefers-color-scheme: dark) {
+//     :root {
+//       --ui-color-background-100: #colors[gray-100]; // black
+//       --ui-color-background-090: #colors[gray-095];
+//       --ui-color-background-080: #colors[gray-090];
+//       --ui-color-background-070: #colors[gray-085];
+//       --ui-color-background-060: #colors[gray-080];
+//       --ui-color-background-050: #colors[gray-070];
+//       --ui-color-background-040: #colors[gray-060];
+//       --ui-color-background-030: #colors[gray-050];
+//       --ui-color-background-020: #colors[gray-040];
+//       --ui-color-background-010: #colors[gray-030];
+//       --ui-color-background-000: #colors[gray-020];
+  
+//       --ui-color-foreground-100: #colors[gray-000]; // white
+//       --ui-color-foreground-090: #colors[gray-005];
+//       --ui-color-foreground-080: #colors[gray-010];
+//       --ui-color-foreground-070: #colors[gray-015];
+//       --ui-color-foreground-060: #colors[gray-020];
+//       --ui-color-foreground-050: #colors[gray-030];
+//       --ui-color-foreground-040: #colors[gray-040];
+//       --ui-color-foreground-030: #colors[gray-050];
+//       --ui-color-foreground-020: #colors[gray-060];
+//       --ui-color-foreground-010: #colors[gray-070];
+//       --ui-color-foreground-000: #colors[gray-080];
+//     }
+//   }
+
+
+
+// #colors() {
+//     gray-000: 228, 100%, 100%; // #ffffff
+//     gray-005: 228, 100%, 98%;  // #f5f7ff
+//     gray-010: 226, 35%, 93%;   // #e6e9f3
+//     gray-015: 228, 24%, 88%;   // #d8dbe7
+//     gray-020: 227, 17%, 77%;   // #bcc0cf
+//     gray-030: 229, 13%, 67%;   // #a1a5b6
+//     gray-040: 227, 11%, 57%;   // #878c9e
+//     gray-050: 227, 9%, 48%;    // #6f7486
+//     gray-060: 226, 11%, 39%;   // #585d6e
+//     gray-070: 224, 13%, 30%;   // #424755
+//     gray-080: 228, 14%, 21%;   // #2e313d
+//     gray-085: 228, 16%, 13%;   // #1b1d25
+//     gray-090: 231, 16%, 8%;    // #121319
+//     gray-095: 225, 18%, 4%;    // #090a0d
+//     gray-100: 225, 0%, 0%;     // #000000
+// }
